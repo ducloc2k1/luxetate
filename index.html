@@ -21,19 +21,34 @@
     <!-- HEADER -->
     <header class="l-header">
         <nav class="container">
-            <div class="row nav-menu">
-                <a href="" class="nav__logo">luxestate</a>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="">About</a></li>
-                    <li class="nav__item"><a href="">Appartment</a></li>
-                    <li class="nav__item"><a href="">How It Works</a></li>
-                    <li class="nav__item"><a href="">Agents</a></li>
-                    <li class="nav__item"><a href="">Contact Us</a></li>
-                </ul>
-                <div class="nav__links d-flex align-items-center">
-                    <a href="" class="button button-transperant nav__link">Join Us</a>
-                    <a href="" class="button nav__link">Getting Started</a>
+            <div class="row align-items-center nav-menu justify-content-between">
+                
+                <div class="col-10 col-sm-10 col-md-3 col-lg-2">
+                    <a href="" class="nav__logo">luxestate</a>
                 </div>
+                
+                <div class="col-6 d-none d-sm-none d-md-block col-sm-6 col-md-9 col-lg-7">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="">About</a></li>
+                        <li class="nav__item"><a href="">Appartment</a></li>
+                        <li class="nav__item"><a href="">How It Works</a></li>
+                        <li class="nav__item"><a href="">Agents</a></li>
+                        <li class="nav__item"><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-2 d-none col-sm-2 col-lg-3 d-lg-none d-xl-block">
+                    <div class="nav__links d-flex align-items-center">
+                        <a href="" class="nav__link">Join Us</a>
+                        <a href="" class="button nav__link">Getting Started</a>
+                    </div>
+                </div>
+                
+                
+                <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-md-none">
+                    <a href="" class="nav__toggle"><i class="far fa-bars"></i></a>
+                </div>
+                
             </div>
         </nav>
     </header>
@@ -49,9 +64,9 @@
                         <i class="fal fa-long-arrow-left"></i>
                         <span>Scroll Down</span>
                     </a>
-                    <div class="col-md-8 home__find">
+                    <div class="col-xs-12 col-sm-12 col-md-12 home__find">
                         <h1 class="home__title">Find Your New <br>Modern Apartment </h1>
-                        <div class="home__search col-7 p-0">
+                        <div class="home__search col-10  col-sm-9 col-lg-5 p-0">
                             <form method="get" action="">
                                 <div class="input-group mb-3">
                                     <i class="fal fa-search home__find-icon"></i>
@@ -66,7 +81,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 p-0 home__data">
+                    <div class="col-12 col-sm-12 col-md-12 p-0 home__data">
                         <img src="assets/images/home/home.png" alt="" class="home__image">
                         <div class="home__info">
                             <div class="home__phone">
@@ -106,22 +121,30 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 company__right d-flex justify-content-end flex-wrap">
-                        <div class="company__data col-sm-6 col-md-6">
-                            <div class="company__number">748</div>
-                            <div class="company__area">Appartments</div>
+                    <div class="col-md-6 pr-0 company__right d-flex justify-content-end flex-wrap">
+                        <div class="col-6 mb-5 col-sm-6 col-md-6">
+                            <div class="company__data">
+                                <div class="company__number">748</div>
+                                <div class="company__area">Appartments</div>
+                            </div>
                         </div>
-                        <div class="company__data col-sm-6 col-md-6">
-                            <div class="company__number">3854</div>
-                            <div class="company__area">Clients</div>
+                        <div class="col-6 mb-5 col-sm-6 col-md-6">
+                            <div class="company__data">
+                                <div class="company__number">3854</div>
+                                <div class="company__area">Clients</div>
+                            </div>
                         </div>
-                        <div class="company__data col-sm-6 col-md-6">
-                            <div class="company__number">24</div>
-                            <div class="company__area">Employees</div>
+                        <div class="col-6 mb-5 col-sm-6 col-md-6">
+                            <div class="company__data">
+                                <div class="company__number">24</div>
+                                <div class="company__area">Employees</div>
+                            </div>
                         </div>
-                        <div class="company__data col-sm-6 col-md-6">
-                            <div class="company__number">14</div>
-                            <div class="company__area">Awrads</div>
+                        <div class="col-6 mb-5 col-sm-6 col-md-6">
+                            <div class="company__data">
+                                <div class="company__number">14</div>
+                                <div class="company__area">Awrads</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,16 +155,16 @@
         <section class="appartment section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h2 class="section-title appartment__title">More Then 500+ <br>
                             Appartments For Rent
                         </h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="appartment__content col-sm-6 col-md-6 col-lg-4">
+                    <div class="appartment__content col-10 col-sm-6 col-md-6 col-lg-4">
                         <img src="assets/images/appartment/appartment-image/appartment1.png" alt=""
-                            class="apprtment__img">
+                            class="appartment__img">
                         <div class="appartment__data">
                             <h3 class="appartment__name">Random Street, Apt B453, New York</h3>
                             <div class="appartment__detail">
@@ -157,9 +180,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartment__content col-sm-6 col-md-6 col-lg-4">
+                    <div class="appartment__content col-10 col-sm-6 col-md-6 col-lg-4">
                         <img src="assets/images/appartment/appartment-image/appartment1.png" alt=""
-                            class="apprtment__img">
+                            class="appartment__img">
                         <div class="appartment__data">
                             <h3 class="appartment__name">Random Street, Apt B453, New York</h3>
                             <div class="appartment__detail">
@@ -175,9 +198,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartment__content col-sm-6 col-md-6 col-lg-4">
+                    <div class="appartment__content col-10 col-sm-6 col-md-6 col-lg-4">
                         <img src="assets/images/appartment/appartment-image/appartment1.png" alt=""
-                            class="apprtment__img">
+                            class="appartment__img">
                         <div class="appartment__data">
                             <h3 class="appartment__name">Random Street, Apt B453, New York</h3>
                             <div class="appartment__detail">
@@ -193,9 +216,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartment__content col-sm-6 col-md-6 col-lg-4">
+                    <div class="appartment__content col-10 col-sm-6 col-md-6 col-lg-4">
                         <img src="assets/images/appartment/appartment-image/appartment1.png" alt=""
-                            class="apprtment__img">
+                            class="appartment__img">
                         <div class="appartment__data">
                             <h3 class="appartment__name">Random Street, Apt B453, New York</h3>
                             <div class="appartment__detail">
@@ -211,9 +234,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartment__content col-sm-6 col-md-6 col-lg-4">
+                    <div class="appartment__content col-10 col-sm-6 col-md-6 col-lg-4">
                         <img src="assets/images/appartment/appartment-image/appartment1.png" alt=""
-                            class="apprtment__img">
+                            class="appartment__img">
                         <div class="appartment__data">
                             <h3 class="appartment__name">Random Street, Apt B453, New York</h3>
                             <div class="appartment__detail">
@@ -229,9 +252,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartment__content col-sm-6 col-md-6 col-lg-4">
+                    <div class="appartment__content col-10 col-sm-6 col-md-6 col-lg-4">
                         <img src="assets/images/appartment/appartment-image/appartment1.png" alt=""
-                            class="apprtment__img">
+                            class="appartment__img">
                         <div class="appartment__data">
                             <h3 class="appartment__name">Random Street, Apt B453, New York</h3>
                             <div class="appartment__detail">
@@ -249,7 +272,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 home__search">
+                    <div class="col-12 col-sm-7 col-md-6 col-lg-6 home__search appartment__search">
                         <form method="get" action="">
                             <div class="input-group mb-3">
                                 <i class="fal fa-search home__find-icon"></i>
@@ -269,10 +292,10 @@
         </section>
 
         <!-- WORK -->
-        <section class="work section container">
+        <section class="work section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h2 class="section-title work__title">How it works ?</h2>
                         <p class="section-subtitle">
                             In this space market-facing, yet UI work flows , or bake it in. <br> Red flag we need a
@@ -282,7 +305,7 @@
                 </div>
                 <div class="row">
                     <div class="work__list d-flex">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="work-item">
                                 <h2 class="work-item__index">01</h2>
                                 <div class="work-item__data">
@@ -293,7 +316,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="work-item">
                                 <h2 class="work-item__index">02</h2>
                                 <div class="work-item__data">
@@ -304,7 +327,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="work-item">
                                 <h2 class="work-item__index">03</h2>
                                 <div class="work-item__data">
@@ -324,7 +347,7 @@
         <section class="service section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h2 class="section-title">Services</h2>
                         <p class="section-subtitle">
                             In this space market-facing, yet UI work flows , or bake it in. <br> Red flag we need a
@@ -334,13 +357,13 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="service__left">
                             <img src="assets/images/service/service.png" alt="" class="service__img">
                         </div>
                     </div>
 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="service__right">
                             <div class="service__content">
                                 <h3 class="service__title">Renting</h3>
@@ -381,7 +404,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h2 class="section-title">Meet Our Agents</h2>
                         <p class="section-subtitl">
                             In this space market-facing, yet UI work flows , or bake it in. <br> Red flag we need a
@@ -393,7 +416,7 @@
                 </div>
 
                 <div class="row agent__list">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="mb-5 col-12 col-sm-12 col-md-12 col-lg-4">
                         <div class="agent__item">
                             <img src="assets/images/agent/agent1.png" alt="" class="agent__img">
                             <div class="agent__data">
@@ -410,7 +433,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="mb-5 col-12 col-sm-12 col-md-12 col-lg-4">
                         <div class="agent__item">
                             <img src="assets/images/agent/agent2.png" alt="" class="agent__img">
                             <div class="agent__data">
@@ -427,7 +450,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="mb-5 col-12 col-sm-12 col-md-12 col-lg-4">
                         <div class="agent__item">
                             <img src="assets/images/agent/agent3.png" alt="" class="agent__img">
                             <div class="agent__data">
@@ -453,7 +476,7 @@
             <div class="container">
                 <div class="row">
                     <div class="address__content d-flex align-items-center">
-                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <div class="address__left">
                                 <img src="assets/images/address/address1.png" alt="" class="address__img">
                                 <div class="address__detail">
@@ -463,7 +486,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-5">
                             <div class="address__right">
                                 <h3 class="section-title">Super Awesome Add</h3>
                                 <p class="section-subtitle">
@@ -477,7 +500,7 @@
                     </div>
                     <div class="address__content d-flex align-items-center">
                         
-                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-5">
                             <div class="address__right">
                                 <h3 class="section-title">Super Awesome Add</h3>
                                 <p class="section-subtitle">
@@ -488,7 +511,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <div class="address__left">
                                 <img src="assets/images/address/address2.png" alt="" class="address__img ml-auto">
                                 <div class="address__detail">
@@ -499,13 +522,13 @@
                         </div>
                     </div>
                     <div class="address__content d-flex align-items-center">
-                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <div class="address__left">
                                 <img src="assets/images/address/address3.png" alt="" class="address__img">
                             </div>
                         </div>
 
-                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-5">
                             <div class="address__right">
                                 <h3 class="section-title">Super Awesome Add</h3>
                                 <p class="section-subtitle">
@@ -524,16 +547,16 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="l-footer">
+    <!-- <footer class="l-footer">
         <div class="container">
             <div class="row">
                 <div class="footer__top d-flex col-12">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                         <a href="" class="footer__logo">luxestate <br>
                             Explore Real Estate</a>
                     </div>
 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 position-relative">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 position-relative">
                         <div class="home__search footer__search">
                             <form method="get" action="">
                                 <div class="input-group mb-3">
@@ -552,19 +575,19 @@
             </div>
             <div class="row">
                 <div class="footer__bottom d-flex pr-0 pl-0 col-12">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                         <h3 class="footer__bottom-logo">luxestate</h3>
                         <p>© 2019 - luxestate, <br>
                             All Right Reserved</p>
                     </div>
                     
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
                         <h3>LUXESTATE</h3>
                         <p>Agents</p>
                         <p>Hunters</p>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
                         <h3>COMPANY</h3>
                         <p>About</p>
                         <p>FAQ</p>
@@ -572,13 +595,13 @@
                         <p>Social</p>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
                         <h3>PRODUCT</h3>
                         <p>Appartments</p>
                         <p>How It Works</p>
                     </div>
 
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
                         <h3>SERVICES</h3>
                         <p>Renting</p>
                         <p>Selling</p>
@@ -588,7 +611,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.min.js"></script>
 

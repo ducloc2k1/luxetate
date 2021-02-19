@@ -15,8 +15,8 @@
     
     /*===== Font and typography =====*/
     --body-font: 'Montserrat', sans-serif;
-    --h1-font-size: 61px;
-    --h2-font-size:4rem;
+    --h1-font-size: 50px;
+    --h2-font-size: 3.5rem;
     --h3-font-size: 2.5rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -40,17 +40,6 @@
     --z-normal: 1;
     --z-tooltip: 10;
     --z-fixed: 100;
-}
-
-@media screen and (min-width: 768px){
-    :root{
-        --h1-font-size: 61px;
-        --h2-font-size:4rem;
-        --h3-font-size: 2.5rem;
-        --normal-font-size: 1.3rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
-    }
 }
 
 /*===== BASE =====*/
@@ -198,8 +187,6 @@ img{
     font-size: 25px;
     color: #1f373d;
     transition: .3s;
-    margin-right: auto;
-    padding-left: 15px;
 }
 
 .nav__logo:hover{
@@ -208,6 +195,7 @@ img{
 
 .nav__list{
     display: flex;
+    justify-content: flex-end;
 }
 
 .nav__item{
@@ -224,8 +212,12 @@ img{
     color: var(--first-color);
 }
 
+.nav__item, .nav__link{
+    font-size: 13px;
+}
+
 .nav__links{
-    padding-right: 15px;
+    justify-content: flex-end;
     margin-left: auto;
 }
 
@@ -250,6 +242,13 @@ img{
 
 .nav__link:last-child:hover{
     background-color: inherit;
+}
+
+.nav__toggle {
+    display: block;
+    font-size: 25px;
+    text-align: right;
+    color: var(--text-color);
 }
 
 /*===== SCROLL DOWN =====*/
@@ -286,9 +285,10 @@ img{
 }
 
 .company__data{
+    margin-left: auto;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
-    flex: 0 0 200px;
     height: 20rem;
     align-items: center;
     justify-content: center;
@@ -321,12 +321,14 @@ img{
 }
 
 .home__find{
+    position: absolute;
+    top: 20%;
     z-index: 1;
 }
 
 .home__data{
     position: absolute;
-    right: -50px;
+    right: -150px;
     bottom: 0;
     height: 100%;
 }
@@ -340,6 +342,8 @@ img{
 .home__image{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .home__search{
@@ -352,6 +356,7 @@ img{
     height: 55px;
     border: none;
     padding-left: 50px;
+    font-size: 15px;
 }
 
 .home__search input::placeholder{
@@ -422,7 +427,7 @@ img{
     padding: 25px 0 25px 25px;
 }
 
-.apprtment__img{
+.appartment__img{
     max-height: 380px;
     object-fit: cover;
     max-width: 350px;
@@ -454,6 +459,7 @@ img{
 
 .work__list{
     margin-top: 70px;
+    flex-wrap: wrap;
 }
 
 .work-item{
@@ -517,8 +523,8 @@ img{
 .service__img{
     position: relative;
     left: -100px;
-    /* height: 100%; */
-    /* object-fit: cover; */
+    height: 100%;
+    object-fit: cover;
 }
 
 .service__title{
@@ -660,4 +666,161 @@ img{
 
 .footer__bottom{
     color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 576px){
+
+    .home__data {
+        right: -50px;
+    }
+
+    .home__search input{
+        height: 40px;
+    }
+
+    .home__search button{
+        padding: 0 20px;
+    }
+
+    .home__search .home__find-icon, .home__search input, .home__search input::placeholder, .home__search button{
+        font-size: 13px;
+    }
+
+    .home-container{
+        height: 550px;
+    }
+
+    .home__title{
+        font-size: 40px;
+    }
+
+    .home__info {
+        width: 100%;
+        height: 50px;
+    }
+
+    .home__phone, .home__address{
+        font-size: 13px;
+    }
+
+    .company__data{
+        margin: auto;
+    }
+
+    .appartment__img{
+        max-width: 100%;
+    }
+
+    .appartment__search, .appartment__search input {
+        height: 40px;
+    }
+
+    .appartment__search input, .appartment__search button, .appartment__search input::placeholder{
+        font-size: 13px;
+    }
+
+    .button-white{
+        margin-top: 20px;
+        margin-left: 15px;
+        height: 40px;
+        padding: 0 15px;
+    }
+
+    .work-item{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .service__img{
+        position: relative;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .home__data {
+        right: -50px;
+    }
+
+    .home__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .home__info{
+        height: 50px;
+    }
+    
+    .home__phone, .home__address{
+        font-size: 13px;
+    }
+
+    .company__data{
+        margin: auto;
+    }
+
+    .appartment__search, .appartment__search input {
+        height: 40px;
+    }
+
+    .appartment__search input, .appartment__search button, .appartment__search input::placeholder{
+        font-size: 13px;
+    }
+
+    .work-item{
+        width: 38rem;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+    .service__img{
+        position: relative;
+        left: 0;
+    }
+
+    .agent__item{
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root{
+        --h1-font-size: 61px;
+        --h2-font-size:4rem;
+        --h3-font-size: 2.5rem;
+        --normal-font-size: 1.3rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .work-item{
+        width: 38rem;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+    .agent__item{
+        width: 350px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+@media screen and (min-width: 1200px){
+    .home__data{
+        right: -155px;
+    }
+
+    .home__phone, .home__address{
+        font-size: 15px;
+    }
+
 }
