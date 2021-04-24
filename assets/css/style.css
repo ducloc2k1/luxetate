@@ -810,7 +810,18 @@ img {
   }
 
   #nav-menu {
-    display: none;
+    position: fixed;
+    width: -100% !important;
+    max-width: 100%;
+    left: 0;
+    padding-left: 0;
+    text-align: center;
+    padding-right: 0;
+    top: -100%;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 0 0 1rem 1rem;
   }
 }
 
