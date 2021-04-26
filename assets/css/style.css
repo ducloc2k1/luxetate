@@ -622,6 +622,14 @@ img {
   margin-bottom: 55px;
 }
 
+.address__content:nth-child(2) .address__right{
+  order: 1;
+}
+
+.address__content:nth-child(2) .address__left{
+  order: 2;
+}
+
 .address__content .section-title {
   font-size: 25px;
 }
